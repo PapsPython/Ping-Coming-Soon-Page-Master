@@ -1,0 +1,153 @@
+:root{
+  --primary-blue:  hsl(223, 87%, 63%);
+  --secondary-pale-blue: hsl(223, 100%, 88%);
+  --secondary-light-red:hsl(354, 100%, 66%);
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutral-very-dark-blue: hsl(209, 33%, 12%); 
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: white;
+  font-family: 'Libre Franklin', sans-serif;
+ }
+
+p,form{
+  font-weight: 300;
+  font-size:0.65rem;
+  }
+
+*,*:before,*:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+  width:80%;
+  max-width:400px;
+  padding: 4em 0.75em 0.5em;
+  justify-content: center;
+  align-items: center;
+   margin: 0 auto;
+}
+
+img:first-child{
+  width:15%;
+  margin-bottom:1.25em;
+ }
+
+span{
+  font-weight: 700;
+  color:black;
+}
+
+p:first-of-type{
+  font-size:1.5rem;
+  color:hsl(0, 0%, 59%,0.5) ;
+}
+
+img:nth-of-type(2){
+  display: block;
+  width: 95%;
+  margin:4em 0 6em;
+}
+
+form{
+  width:90%;
+  display:flex;
+  flex-direction:column;
+  align-items:baseline;
+  gap:1.8em;
+}
+
+
+input,button{
+  width: 100%;
+  border-radius:25px ;
+  padding: 1em 0;
+  border:none; 
+  font:inherit;
+  font-size: inherit;
+}
+
+p:nth-of-type(2){
+  margin:0.1em 0 0.8em;
+  font-weight:600;
+  font-size:0.8rem;
+}
+
+input{
+  border:1px solid var(--secondary-pale-blue);
+  padding:1em 1.8em;
+}
+
+.errorblock{
+  width: 100%;
+}
+
+button{
+  background-color: var(--primary-blue);
+  color:white;
+  box-shadow: 0px 2px 15px var(--neutral-gray);
+}
+
+.socialmediaacc{
+  display: flex;
+  gap:0.8em;
+}
+
+
+.background{
+  display: flex;
+  width: 30px;
+  height:30px;
+  border: 1px solid  hsl(0, 0%, 59%,0.2) ;
+  border-radius: 50%;
+}
+
+i{
+  margin: auto;
+  color:#216ae8;
+}
+
+p:last-child{
+  color: hsl(0, 0%, 59%,0.8) ;
+}
+
+@media screen and (min-width:400px){
+  
+.container {
+  max-width:660px;
+ }
+
+ form{
+  flex-direction:row;
+  gap:1em;
+  align-items: baseline;
+  max-width:600px;
+  }
+    
+.errorblock{
+  flex-grow:10;
+}
+  
+button{
+  box-shadow: 0px 5px 3px  var(--neutral-gray);
+  flex-grow:1;
+}
+  
+input,button{
+  padding: 0.85em 0.5em;
+}
+   
+}
+
+
